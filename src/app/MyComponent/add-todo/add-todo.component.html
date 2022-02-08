@@ -1,0 +1,16 @@
+<div class="container text-center">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group row my-3">
+        <div class="col-6">
+          <label for="ex1">Title</label>
+          <input class="form-control" id="ex1" type="text" name="title" [(ngModel)]="title">
+        </div>
+        <div class="col-6">
+          <label for="ex2">Description</label>
+          <input class="form-control" [(ngModel)]="desc" id="ex2" type="text" name="desc">
+        </div>
+      </div>
+      <Button class="btn btn-danger ">Add todo</Button>
+    </form>
+  </div>
+  
